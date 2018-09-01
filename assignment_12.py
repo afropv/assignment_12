@@ -1,8 +1,10 @@
 #Q.1- Print the current day using Datetime module.
 
 from datetime import date
+import calendar
+
 x=date.today()
-print(x.day)
+print(calendar.day_name[x.weekday()])
 
 #Q.2- Open your browser and play a video using webbrowser module in python.
 
@@ -12,7 +14,7 @@ webbrowser.open_new_tab('https://www.youtube.com/watch?v=JjaqBsfBB-k')
 #Q.3- Write a program to rename all the files in a directory and convert them into .jpg file format.
 
 import os
-path=os.getcwd()
+path='C:/Users/afroPC/Desktop/New'
 files=os.listdir(path)
 i=1
 for file in files:
